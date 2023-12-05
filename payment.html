@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="payment.css">
+    <script src="https://kit.fontawesome.com/523e0b93db.js" crossorigin="anonymous"></script>
+    <title>Ecommrance</title>
+    <script src="https://www.paypal.com/sdk/js?client-id=YOUR_PAYPAL_CLIENT_ID&currency=USD"></script>
+</head>
+
+<body>
+
+    <div class="bar">
+   
+
+        <div id="logo">Back<span style="color:  #F6F4F9;">Pack</span ></div>
+           <div id="checkout">Checkout</div>
+            
+                                <div class="iconContain">
+                                    <a href="http://127.0.0.1:5500/ecommrance/option.html"><i class="fa-solid fa-house fa-2xl"></i></a>
+                                    <a href="http://127.0.0.1:5500/ecommrance/payment.html"><i class="fa-solid fa-cart-shopping fa-2xl"></i></a>
+                                    <div class="count js-count">0</div>
+                                </div>  
+</div>
+
+    <div class="container">
+
+        <div class="viewcart js-viewcart" id="cart1"> </div>
+
+        <div class="payment js-payment-summery"> </div>
+               
+    </div>
+
+    <script type="module" src="scripts/payment.js"></script>
+   
+
+</body>
+</html>

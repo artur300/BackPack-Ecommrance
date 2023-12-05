@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="slide_menu.css">
+    <script src="https://kit.fontawesome.com/523e0b93db.js" crossorigin="anonymous"></script>
+    <title>Ecommerce</title>
+    
+
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+            <script type="text/javascript">
+                (function()
+                {
+                    emailjs.init("Q4qBtidQxtIZigsXj");
+                })();
+            </script>
+
+</head>
+<body>
+   
+<div class="bar">
+   
+    <div id="logo">Back<span style="color:  #F6F4F9;">Pack</span ></div>
+        <div id="checkout">Credit Pay   
+        <div class="iconContain">
+            <a href="http://127.0.0.1:5500/ecommrance/option.html"><i class="fa-solid fa-house fa-2xl"></i></a>
+        </div>                           
+    </div>
+</div>
+
+<div class="page_contain">
+       <img src="pic/travelpic1.jpg" alt="guytrave2" height="auto" width="100%">
+    <div class="contain">
+        
+        
+           <div class="box" id="head1"></div>
+           <div class="contain2" id="head2">
+            
+            <div class="num_credit">
+                <input  type="text" placeholder="Card number" id="card" maxlength="16">
+            </div>
+
+            <div class="flex_row">
+                <div class="words">
+                    <input  type="text" placeholder="Expires 00/00" id="ex"  maxlength="5">
+                </div>
+                <div class="words">
+                    <input  type="text" placeholder="CSC" id="csc" maxlength="3" >
+                </div>
+            </div>        
+                <div id="biltext">Shipping address</div>
+
+
+
+                <div class="dropdown" id="countryDropdown">
+                    <div class="dropdown_selector" onclick="showDropDown(this)">
+                        <span class="select" id="Country">Country</span>
+                        <i class="fa fa-caret-up icon" id="icon"></i>
+                    </div>
+                
+                    <div class="dropdown-list" id="countryList">
+                       
+                    </div>
+                </div>
+                
+         
+            <div class="flex_row">
+                <div class="words">
+                    <input  type="text" placeholder="First Name" id="name" maxlength="10">
+                </div>
+                <div class="words">
+                    <input  type="text" placeholder="Last Name" id="lastname" maxlength="10">
+                </div>
+            </div>
+            
+
+            <div class="num_credit">
+                <input  type="text" placeholder="Street Address" id="address"  maxlength="100" >
+            </div>
+
+            <div class="num_credit">
+                <input  type="text" placeholder="Additional information" id="info" maxlength="100">
+            </div>
+
+
+            <div class="dropdown" id="regionDropdown">
+                <div class="dropdown_selector" onclick="showDropDown(this)">
+                    <span class="select" id="region">Region</span>
+                    <i class="fa fa-caret-up icon" id="icon"></i>
+                </div>
+                <div class="dropdown-list" id="regionList">
+                   
+                </div>
+            </div>
+
+
+
+             <div class="num_credit">
+                <input  type="text" placeholder="Postal Code" id="postal" maxlength="10">
+            </div>
+            <div class="num_credit">
+                <input  type="text" placeholder="Mobile number" id="Mobile" maxlength="10">
+            </div>
+            <div class="num_credit">
+                <input  type="text" placeholder="Email" id="Email" maxlength="100">
+            </div>
+
+         
+            <button id="Pay" onclick="sendMail()">Pay now</button>
+
+    </div>
+            
+</div>
+
+
+<script src="scripts/slide_menu.js"></script>
+<script type="module" src="scripts/sendMail.js"></script>
+
+</body>
+</html>

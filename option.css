@@ -1,0 +1,299 @@
+
+
+
+.overlay {
+    font-family: Arial, Helvetica, sans-serif;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+  }
+
+ 
+  .modal {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: left;
+    position: relative;
+  }
+
+ 
+  .close-btn {
+    cursor: pointer;
+    color: #333;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+
+
+@font-face {
+    font-family: logofont;
+    src: url(fonts/logof.ttf);
+}
+
+
+
+.bar
+{
+   position: fixed;
+    background-color: #6184c6;
+    height: auto;
+    width: 100%;
+    z-index: 1000;
+    display: flex; 
+    padding: 2%;
+    
+
+}
+
+
+#logo{
+    
+  
+    font-weight: bold;
+    font-family: logofont;
+    font-size:25pt;
+    color: #FCD752;
+      
+}
+
+
+#search{
+    justify-content: center;
+    margin: 1%;
+    display: flex;
+}
+
+
+.iconContain{
+
+
+    font-size: 15pt;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center; 
+    margin-left: 50px;
+    
+}
+
+.count{
+    
+    
+    color: #FCD752;
+    font-size: 30pt;
+    
+}
+
+
+body
+{
+    background-color: #F6F4F9;
+    margin: 0;  
+}
+
+form
+{
+    border-radius: 20px;
+    background-color:#FCD752;
+    width: 770px;
+    height: 40px;
+    display: flex; 
+   margin-left: 40px;
+}
+
+
+form input
+{
+    flex: 1;
+    border: none;
+    outline:none;
+    padding: 10px ;
+    border-radius: 0px;
+    
+    
+}
+
+form button
+{
+    border-radius: 5px;
+    background-color: #FCD752;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    font-weight: lighter;
+}
+
+form button:hover{ color: #ffffff;}
+
+
+
+
+.cart-icon-container 
+{
+    position: relative;  
+}
+
+.fa-house{color: #F6F4F9;}
+.fa-cart-shopping{color: #F6F4F9;}
+
+
+.fa-house:hover{ transform: scale(1.2);}
+.fa-cart-shopping:hover{ transform: scale(1.2);}
+
+
+
+
+
+
+.container 
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 25px;
+    margin-top: 20px;
+    position: absolute;
+    top: 120px;
+    
+}
+
+
+.box
+{
+    width: 300px;
+    height: 520px;
+    background-color: aliceblue;
+    border: 0.5pt solid #b6b6b6 ;
+    border-radius: 20px;
+    text-align: center; 
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; 
+     
+}
+
+
+.box .innerbox
+{
+   
+    width: 200px;
+    height: 300px; 
+    padding: 7% 7%;
+    border-radius: 10px;
+    
+}
+
+
+
+.box .innerbox img
+ {
+    
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+    border-radius: 20px;   
+}
+
+#name
+{
+    padding-top: 30px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    bottom: 100px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14pt;   
+    color: rgb(107, 107, 107);
+    
+}
+
+#price
+{
+    
+    font-weight: lighter;
+    bottom: 100px;
+    padding-top: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14pt;
+    color: rgb(107, 107, 107);
+
+}
+
+#Description
+{
+    
+    
+    font-weight: lighter;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 12pt;   
+}
+
+#icon:hover
+{
+    transform: scale(1.2); 
+}
+   
+.add{
+    width: 110px;
+    height: 30px;
+    padding: 5px 5px;
+    background-color: #FCD752;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 12pt;
+    margin-top: 10px;
+}
+
+.add:hover{background-color: #ffc800;}
+
+
+
+
+@media screen and (max-width: 600px) 
+{
+
+
+    .container{ top: 200px;}
+    .bar{flex-direction: column;}
+    #logo{margin-left: 20px;}
+    form{margin-left: 10px;}
+    #search
+    {
+        margin: 3%;
+        width: 90%;
+        height: auto;
+        
+    }
+    .iconContain
+    {
+        justify-content: left;
+        margin-left: 20px;
+        
+    }
+    .box{ height: 520px;}
+    
+
+    #search{
+        justify-content: center;
+        margin: 4%;
+        display: flex;
+        margin-right: 30px;
+       
+    }
+    
+}
+
+  

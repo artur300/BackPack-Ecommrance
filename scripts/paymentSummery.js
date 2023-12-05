@@ -85,7 +85,7 @@ function payWithCredit()
     } 
     else 
     {
-        window.location.href = "http://127.0.0.1:5500/ecommrance/slide_menu.html";
+        window.location.href = "https://artur300.github.io/BackPack-Ecommrance/slide_menu.html";
         console.log("Proceeding with credit card payment...");
     }
 }

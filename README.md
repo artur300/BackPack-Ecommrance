@@ -3,8 +3,7 @@ An ecommrance project of an online store for backpacks
 This project is a hands-on exploration of web development, showcasing my skills in HTML, CSS, and JavaScript. 
 Dive into an immersive e-commerce experience designed for both learning and practical use.
 
-file:///C:/Users/Artur/Downloads/sitephotos.jpg
-Functionality
+https://artur300.github.io/BackPack-Ecommrance/option.html
 
 *Easily add items to the cart, and watch the item count update in real-time.
 

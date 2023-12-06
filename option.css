@@ -293,10 +293,9 @@ form button:hover{ color: #ffffff;}
         margin-right: 30px;
        
     }
-    .modal {
-        margin: 20px;
-        margin-top: 25%;
-      }
+   .modal{display: none;}
+    .overlay {background: none;
+        z-index: 0;}
 
     
 }

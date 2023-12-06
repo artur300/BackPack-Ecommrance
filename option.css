@@ -293,6 +293,11 @@ form button:hover{ color: #ffffff;}
         margin-right: 30px;
        
     }
+    .modal {
+        margin: 20px;
+        margin-top: 25%;
+      }
+
     
 }
 
